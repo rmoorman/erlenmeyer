@@ -16,3 +16,8 @@ Flask boilerplate
   $ cookiecutter git@github.com:SiliconValleyInsight/erlenmeyer.git
   ```
 
+3. Up
+  ```bash
+  $ cd <app_name>
+  $ ./up.sh
+  ```

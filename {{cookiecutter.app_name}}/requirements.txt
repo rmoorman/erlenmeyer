@@ -1,5 +1,6 @@
 arrow
 Flask
+Flask-Login
 Flask-Migrate
 Flask-Restful
 Flask-Script

@@ -1,5 +1,8 @@
 {
     "app_name": "app",
     "author": "SiliconValleyInsight",
-    "author_email": "siliconvalleyinsight@gmail.com"
+    "author_email": "siliconvalleyinsight@gmail.com",
+    "database_name": "app",
+    "database_password": "notapassword",
+    "session_secret_key": "notasecret"
 }

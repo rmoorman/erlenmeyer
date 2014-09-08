@@ -15,3 +15,4 @@ WORKDIR /src/{{cookiecutter.app_name}}
 RUN pip install -r /src/{{cookiecutter.app_name}}/requirements.txt
 RUN python setup.py install
 
+CMD ["gunicorn", "wsgi:app"]

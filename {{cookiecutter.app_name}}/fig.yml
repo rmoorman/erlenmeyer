@@ -1,0 +1,11 @@
+web:
+    build: .
+    ports:
+        - "5000:5000"
+    volumes:
+        - .:/src/{{cookiecutter.app_name}}
+    environment:
+        MYSQL_ROOT_PASSWORD:
+        MYSQL_DATABASE:
+        SECRET_KEY:
+    command: python manage.py runserver -h 0.0.0.0 -d -r
