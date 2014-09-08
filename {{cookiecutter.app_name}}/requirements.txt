@@ -1,0 +1,11 @@
+arrow
+Flask
+Flask-Migrate
+Flask-Restful
+Flask-Script
+Flask-SQLAlchemy
+Flask-WTF
+gunicorn
+passlib
+psycopg2
+requests
