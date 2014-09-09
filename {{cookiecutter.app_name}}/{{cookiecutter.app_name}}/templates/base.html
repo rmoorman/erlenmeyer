@@ -1,12 +1,19 @@
 {% raw -%}
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <title></title>
+    <title></title>
+    {%- block css %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.scss.css')}}">
+    {% endblock -%}
 </head>
 <body>
-  {%- block content %}
-  {% endblock -%}
+    {%- block content %}
+    {% endblock -%}
+    {%- block js %}
+    <script src="{{url_for('static', filename='bower_components/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js')}}"></script>
+    {% endblock -%}
 </body>
 </html>
 {%- endraw %}

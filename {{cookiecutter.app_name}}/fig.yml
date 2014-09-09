@@ -1,10 +1,11 @@
-web:
+{{cookiecutter.app_name}}:
     build: .
     ports:
         - "5000:5000"
     volumes:
         - .:/src/{{cookiecutter.app_name}}
     environment:
+        DEBUG: True
         MYSQL_ROOT_PASSWORD:
         MYSQL_DATABASE:
         SECRET_KEY:

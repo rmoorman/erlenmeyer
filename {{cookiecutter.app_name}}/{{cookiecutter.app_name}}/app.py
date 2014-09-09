@@ -1,6 +1,7 @@
 import os
 
 from flask import Flask
+from sassutils.wsgi import SassMiddleware
 
 from . import ext, views
 from .api import api
@@ -11,11 +12,12 @@ def create_app(**config):
 
     # Default config
     app.config.update(
+        DEBUG=os.environ["DEBUG"],
+        SECRET_KEY=os.environ["SECRET_KEY"],
         SQLALCHEMY_DATABASE_URI="postgresql://root:{}@db/{}".format(
             os.environ["MYSQL_ROOT_PASSWORD"],
             os.environ["MYSQL_DATABASE"],
         ),
-        SECRET_KEY=os.environ["SECRET_KEY"],
         CSRF_ENABLED=True,
     )
 
@@ -32,5 +34,11 @@ def create_app(**config):
     # API
     api.init_app(app)
     api.app = app
+
+    # SASS
+    if app.debug:
+        app.wsgi_app = SassMiddleware(app.wsgi_app, dict(
+            {{cookiecutter.app_name}}=("static/sass", "static/css", "/static/css"),
+        ))
 
     return app
