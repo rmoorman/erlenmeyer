@@ -21,3 +21,21 @@ Flask boilerplate
   $ cd <app_name>
   $ ./up.sh
   ```
+
+## Planned Features
+
+* User accounts with basic information
+  * Login
+    * OAuth2
+      * Google
+      * Facebook
+      * Coursera
+    * OAuth
+      * Twitter
+    * Password login
+* Posts CMS
+* API
+* Database Migration
+* Mailing
+
+_Note: Features should be modular (exist as modules that can be swapped in/out)_
