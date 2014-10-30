@@ -35,8 +35,11 @@ Flask boilerplate
     * Password login
   * Profile page
 * Posts CMS
-* API
+  * ACL
 * Database Migration
+* API
+  * Token Authentication
+  * ACL
 * Mailing
 
 _Note: Features should be modular (exist as modules that can be swapped in/out)_
