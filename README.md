@@ -19,7 +19,8 @@ Flask boilerplate
 3. Up
   ```bash
   $ cd <app_name>
-  $ ./up.sh
+  $ ./fig.sh build
+  $ ./fig.sh up
   ```
 
 ## Planned Features
