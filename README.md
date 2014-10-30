@@ -33,6 +33,7 @@ Flask boilerplate
     * OAuth
       * Twitter
     * Password login
+  * Profile page
 * Posts CMS
 * API
 * Database Migration
