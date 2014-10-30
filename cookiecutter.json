@@ -4,5 +4,7 @@
     "author_email": "siliconvalleyinsight@gmail.com",
     "database_name": "app",
     "database_password": "notapassword",
-    "session_secret_key": "notasecret"
+    "session_secret_key": "notasecret",
+    "google_login_client_id": "",
+    "google_login_client_secret": ""
 }

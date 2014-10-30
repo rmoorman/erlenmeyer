@@ -9,4 +9,6 @@
         MYSQL_ROOT_PASSWORD:
         MYSQL_DATABASE:
         SECRET_KEY:
+        GOOGLE_LOGIN_CLIENT_ID:
+        GOOGLE_LOGIN_CLIENT_SECRET:
     command: python manage.py runserver -h 0.0.0.0 -d -r

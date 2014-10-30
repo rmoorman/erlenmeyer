@@ -2,6 +2,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-Hello, world
+{% if current_user.is_authenticated() %}
+Hello, {{name}}
+{% else %}
+<a href="{{google_login_url}}">Google Login</a>
+{% endif %}
 {% endblock %}
 {%- endraw %}

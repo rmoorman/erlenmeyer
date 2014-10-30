@@ -2,6 +2,7 @@ arrow
 Flask
 Flask-Login
 Flask-Migrate
+Flask-OAuth2-Login
 Flask-Restful
 Flask-Script
 Flask-SQLAlchemy
@@ -11,3 +12,4 @@ libsass
 passlib
 psycopg2
 requests
+simpleflake
